@@ -91,7 +91,6 @@ const port = process.env.PORT || 3000;
 
 const start = async () => {
     try {
-        // connect to DB
         await connectDB(process.env.dbURI);
         app.listen(port, () => console.log(`Server listening on port ${port}...`));
     } catch (err) {
